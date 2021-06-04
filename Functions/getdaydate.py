@@ -64,6 +64,7 @@ def getdaydate (Occurrence = 'Second',DayOfWeek = 'Tuesday',Month: int = date.to
             if newdate.month != Month :
                 return vdate
             vdate =  newdate
-
+"""
 if __name__ == '__main__':
-  #print ("{} is the date of the Second Tuesday.".format(getdaydate()))
+  print ("{} is the date of the Second Tuesday.".format(getdaydate()))
+"""
