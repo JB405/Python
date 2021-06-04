@@ -25,6 +25,8 @@ def getdaydate (Occurrence = 'Second',DayOfWeek = 'Tuesday',Month: int = date.to
         Months = range(1,12)
         for n in Months:
             getdaydate(Month=n)
+    Link:
+      https://github.com/JB405/Python
     """
     WeekDays = ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
     tOccurrence = ("First","Second","Third","Fourth","Last")
