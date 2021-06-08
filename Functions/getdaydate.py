@@ -34,13 +34,13 @@ def getdaydate(Occurrence: str = 'Second', DayOfWeek: str = 'Tuesday', Month: in
     tOccurrence = ("First", "Second", "Third", "Fourth", "Last")
 
     if Occurrence not in tOccurrence:
-        raise TypeError(f"Error: {Occurrence} is not in {tOccurrence}")
+        raise ValueError(f"Error: {Occurrence} is not in {tOccurrence}")
     if DayOfWeek not in WeekDays:
-        raise TypeError(f"Error: {DayOfWeek} is not in {WeekDays}")
-    if Month not in range(1, 12):
-        raise TypeError(f"Error: {Month} is not in range (1 - 12)")
+        raise ValueError(f"Error: {DayOfWeek} is not in {WeekDays}")
+    if Month not in range(1, 13):
+        raise ValueError(f"Error: {Month} is not in range (1 - 12)")
     if Year not in range(1000, 10000):
-        raise TypeError(f"Error: {Year} is not in range  (1000 - 9999)")
+        raise ValueError(f"Error: {Year} is not in range  (1000 - 9999)")
 
     StartDate = date(Year, Month, 1)
 
